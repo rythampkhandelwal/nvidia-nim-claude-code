@@ -71,3 +71,8 @@ uv run ruff check
 ## Notes
 
 - The repository is intended for direct Claude Code usage with NVIDIA NIM.
+
+## My suggested .env variables.
+
+- Fill the nvidia_nim_api_key with your api key.
+- choose the mdoel as "nvidia_nim/qwen/qwen3-coder-480b-a35b-instruct" for best, fast and reliable response (as per my testings :))
