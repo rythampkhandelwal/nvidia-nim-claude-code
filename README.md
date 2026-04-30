@@ -39,6 +39,10 @@ Bash:
 ANTHROPIC_AUTH_TOKEN="freecc" ANTHROPIC_BASE_URL="http://localhost:8082" claude --dangerously-skip-permissions
 ```
 
+```cmd
+set ANTHROPIC_AUTH_TOKEN=freecc && set ANTHROPIC_BASE_URL=http://localhost:8082 && claude --dangerously-skip-permissions
+```
+
 ## Configuration
 
 The main settings live in [`.env.example`](.env.example):
