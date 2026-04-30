@@ -25,6 +25,16 @@ uv run uvicorn server:app --host 0.0.0.0 --port 8082
 
 5. Point Claude Code at the proxy:
 
+Point `ANTHROPIC_BASE_URL` at the proxy root. Do not append `/v1`.
+
+PowerShell:
+
+```powershell
+$env:ANTHROPIC_AUTH_TOKEN="freecc"; $env:ANTHROPIC_BASE_URL="http://localhost:8082"; claude
+```
+
+Bash:
+
 ```bash
 ANTHROPIC_AUTH_TOKEN="freecc" ANTHROPIC_BASE_URL="http://localhost:8082" claude
 ```
