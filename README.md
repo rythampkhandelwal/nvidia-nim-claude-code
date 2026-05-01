@@ -18,6 +18,10 @@ Claude Code proxy focused on NVIDIA NIM and direct Claude Code CLI usage.
 2. Copy `.env.example` to `.env`.
 3. Set `NVIDIA_NIM_API_KEY` and `ANTHROPIC_AUTH_TOKEN`.
 4. Start the proxy:
+5. Install dependency :
+```bash
+pip install uv
+```
 
 ```bash
 uv run uvicorn server:app --host 0.0.0.0 --port 8082
@@ -38,6 +42,8 @@ Bash:
 ```bash
 ANTHROPIC_AUTH_TOKEN="freecc" ANTHROPIC_BASE_URL="http://localhost:8082" claude --dangerously-skip-permissions
 ```
+
+CMD:
 
 ```cmd
 set ANTHROPIC_AUTH_TOKEN=freecc && set ANTHROPIC_BASE_URL=http://localhost:8082 && claude --dangerously-skip-permissions
